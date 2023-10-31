@@ -1,10 +1,15 @@
 #include <iostream>
 #include <vector>
 #include "DyV.h"
+#include <chrono>
 
 using namespace std;
 
 int main(){
+
+
+	auto start = chrono::system_clock::now();
+
 	
 	cout << "************BÚSQUEDA BINARIA************" << endl << endl;
 
@@ -63,11 +68,16 @@ int main(){
                 cout << Vdoublequick[i] << " - ";
         }
         cout << "]" << endl;
+	cout << endl;
 
+	cout << "----------TIEMPO DE EJECUCIÓN----------" << endl;
 
+	auto end = chrono::system_clock::now();
 
+	chrono::duration<float, milli> duration = end - start;
+	cout << "Tiempo: " << duration.count() << "s" << endl;
 
-	cout << endl << endl;
+	cout << endl;
 
 
      return 0;
