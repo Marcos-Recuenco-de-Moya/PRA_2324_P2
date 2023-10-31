@@ -40,31 +40,34 @@ int main(){
 	cout << endl;
 	cout << "************QUICK SORT************" << endl << endl;
 	vector<int> Vintquick{2,8,3,0,4,2,7,1,5,8,6};
-	QuickSort(Vintquick,0,10);
+	quicksort(Vintquick,0,10);
+	cout << "[ - ";
 	for(int i=0 ; i<11 ; i++){
-		cout << "[" << Vintquick[i] << ", ";
+		cout << Vintquick[i] << " - ";
 	}
 	cout << "]" << endl;
 
 
 	vector<char> Vcharquick{'c','g','i','f','d','a','h','e','b'};
-        QuickSort(Vcharquick,0,10);
-        for(int i=0 ; i<11 ; i++){
-                cout << "[" << Vcharquick[i] << ", ";
+        quicksort(Vcharquick,0,8);
+	cout << "[ - ";
+        for(int i=0 ; i<9 ; i++){
+                cout << Vcharquick[i] << " - ";
         }
         cout << "]" << endl;
 
 	vector<double> Vdoublequick{7.3,2.6,9.7,1.2,4.1,5.0,6.9,8.4,3.9};
-        QuickSort(Vdoublequick,0,10);
-        for(int i=0 ; i<11 ; i++){
-                cout << "[" << Vdoublequick[i] << ", ";
+        quicksort(Vdoublequick,0,8);
+	cout << "[ - ";
+        for(int i=0 ; i<9 ; i++){
+                cout << Vdoublequick[i] << " - ";
         }
         cout << "]" << endl;
 
 
 
 
-
+	cout << endl << endl;
 
 
      return 0;
